@@ -1,0 +1,11 @@
+# ROS2 URDF Test
+
+This repository contains a simple ROS2 (Humble) example for displaying a URDF model in RViz2.
+
+## 🧩 Files
+- `urdf/Rosey_model.urdf`: Simple cylinder model
+- `launch/Rosey_display.launch.py`: Launch file for RViz
+
+## 🚀 Run
+```bash
+ros2 launch urdf_test Rosey_display.launch.py
