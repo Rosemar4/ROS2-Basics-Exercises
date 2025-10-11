@@ -1,1 +1,4 @@
 - Check ROS distribution
+```
+  cat /etc/os-release
+```
