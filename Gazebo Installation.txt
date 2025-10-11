@@ -1,10 +1,13 @@
-- Check ROS distribution
+Check ROS distribution
+```python
 //cat /etc/os-release
 //printenv ROS_DISTRO
+```
  
 Output: Humble
 
 - SOURCE FILES
+  
 //source /opt/ros/humble/setup.bash 
 
 -INSTALL GAZEBO
