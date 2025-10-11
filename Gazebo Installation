@@ -1,0 +1,17 @@
+- Check ROS distribution
+//cat /etc/os-release
+//printenv ROS_DISTRO
+ 
+Output: Humble
+
+- SOURCE FILES
+//source /opt/ros/humble/setup.bash 
+
+-INSTALL GAZEBO
+// sudo apt install ros-humble-gazebo-ros-pkgs
+
+-INSTALL GAZEBO ROS2 core tools
+// sudo apt intall ros-humble-ros-core ros-humble geometry2
+
+-TO OPEN AND INSTALL GAZEBO
+//gazebo
