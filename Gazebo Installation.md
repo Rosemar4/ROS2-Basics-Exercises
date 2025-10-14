@@ -6,7 +6,7 @@ Open your terminal (Ctrl+Alt+T) and run:
 Bash
 ```python
 // sudo apt update
-```
+```python
 Step 2: Install the Gazebo Simulator
 Now, install the main Gazebo application. The following command installs the latest stable version compatible with your Ubuntu release.
 
