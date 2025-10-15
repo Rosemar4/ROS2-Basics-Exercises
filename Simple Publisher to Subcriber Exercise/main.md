@@ -53,4 +53,16 @@ Bash
 ```
 touch my_py_pkg/talker.py
 ```
-Open my_py_pkg/talker.py and copy the codes
+Open talker.py in this folder and copy the codes
+
+##Step 4: Write the Subscriber Node ("listener.py")
+This node will listen for the messages from the talker.
+```
+From the ~/ros2_ws/src/my_py_pkg directory, create a second file:
+```
+Bash
+```
+touch my_py_pkg/listener.py
+```
+
+Open listener.py in this folder and copy the codes
