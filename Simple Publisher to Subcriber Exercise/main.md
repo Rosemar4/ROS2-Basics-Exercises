@@ -66,3 +66,53 @@ touch my_py_pkg/listener.py
 ```
 
 Open listener.py in this folder and copy the codes
+
+Step 5: Configure the Package
+Now, we tell ROS2 how to find and run our Python nodes.
+
+Open the setup.py file located in ~/ros2_ws/src/my_py_pkg.
+
+Modify the entry_points dictionary to include your two nodes:
+
+```Python
+
+# Inside your setup.py file
+entry_points={
+    'console_scripts': [
+        'talker = my_py_pkg.talker:main',
+        'listener = my_py_pkg.listener:main',
+    ],
+},
+```
+
+## Step 6: Build and Run
+Finally, let's build the package and run our nodes.
+
+Build the package. Navigate back to the root of your workspace and build:
+
+Bash
+```
+cd ~/ros2_ws
+colcon build --packages-select my_py_pkg
+```
+Source the workspace. In each new terminal you use, you must source the setup file from your new workspace:
+
+Bash
+```
+source ~/ros2_ws/install/setup.bash
+```
+Run the nodes. You will need two separate terminals for this.
+
+In Terminal 1 (after sourcing), start the talker:
+
+Bash
+```
+ros2 run my_py_pkg talker
+```
+In Terminal 2 (after sourcing), start the listener:
+
+Bash
+```
+ros2 run my_py_pkg listener
+```
+You should now see the "Publishing..." messages in the first terminal and the "I heard..." messages in the second. You have successfully created a new workspace and your first publisher/subscriber pair!
